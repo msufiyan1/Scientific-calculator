@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    
+    <div class="calculator">
+        <input type="text" name="display" id="display" disabled>
+        <div class="btns">
+            <div class="container">
+                <div class="dropdown">
+                    <button class="custom-btn" id="dropdownButton">
+                        function
+                  </button>
+                  <ul class="dropdown-menu" id="dropdownMenu">
+                    <button class="fbtn" onclick="operate('log')">log</button>
+
+                    <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another Action</a></li>
+                    <li><a class="dropdown-item" href="#">Something Else Here</a></li> -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        <div class="row">
+            <button onclick="">2ⁿᵈ</button>
+            <button onclick="appendValue('π')">π</button>
+            <button onclick="appendValue('e')">e</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteChar()">⌫</button>
+        </div>
+            <div class="row">
+                <button onclick="operate('square')">x²</button>
+                <button onclick="operate('reciprocal')">1/x</button>
+                <button onclick="operate('abs')">|x|</button>
+                <button onclick="operate('exp')">exp</button>
+                <button onclick="operate('mod')">mod</button>
+            </div>
+            <div class="row">
+                <button onclick="operate('sqrt')">√x</button>
+                <button onclick="appendValue('(')">(</button>
+                <button onclick="appendValue(')')">)</button>
+                <button onclick="operate('fact')">n!</button>
+                <button onclick="appendValue('/')"><Strong>÷</Strong></button>
+            </div>
+            <div class="row">
+                <button onclick="operate('pow')">xʸ</button>
+                <button id="numbs" onclick="appendValue('7')">7</button>
+                <button id="numbs" onclick="appendValue('8')">8</button>
+                <button id="numbs" onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('*')"><strong>×</strong></button>
+            </div>
+            <div class="row">
+                <button onclick="operate('powerOfTen')">10ˣ</button>
+                <button id="numbs" onclick="appendValue('4')">4</button>
+                <button id="numbs" onclick="appendValue('5')">5</button>
+                <button id="numbs" onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('-')"><strong>-</strong></button>
+            </div>
+            <!-- sceintific Operators -->
+            <div class="row">
+                <button onclick="operate('sin')">sin</button>
+                <button id="numbs" onclick="appendValue('1')">1</button>
+                <button id="numbs" onclick="appendValue('2')">2</button>
+                <button id="numbs" onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('+')"><strong>+</strong></button>
+            </div>
+            <div class="row">
+                <button onclick="operate('cos')">cos</button>
+                <button id="numbs" onclick="operate('tan')">tan</button>
+                <button id="numbs" onclick="appendValue('0')">0</button>
+                <button id="numbs" onclick="appendValue('.')"><strong>.</strong></button>
+                <button onclick="calculate()" class="equal"><strong>=</strong></button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+   
+       
+    
+        
+        <div id="history-container">
+            <h3>History</h3>
+            <div id="history"></div>
+            <button class="dlthistory" onclick="clearHistory()">Clear History</button>
+        
+    </div>
+    
+  <script src="./script.js"></script>
+</body>
+</html>

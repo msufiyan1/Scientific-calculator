@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 100vh;
+    background-color: #221e27;
+    font-family: 'Segoe UI';
+}
+
+.calculator {
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+/* .calculator{
+ background-color:#2b2e35;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+} */
+
+input[type="text"]{
+    text-align: end;
+width: 100%;
+padding: 10px;
+margin-bottom: 66px;
+font-size: 24px;
+background-color: #22252900;
+color: #fff;
+border: none;
+border-radius: 5px;    
+}
+
+input#display {
+    font-size: 38px;
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(4.1 fr);
+    grid-gap: 3px;
+}
+
+button {
+    width: 19%;
+    padding: 15px 94px;
+    font-size: 15px;
+    background-color: #343139;
+    color: white;   
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444a52;
+}
+    .dropdown {
+      position: relative; /* Ensures dropdown-menu is positioned relative to this container */
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none; /* Initially hidden */
+      position: absolute; /* Makes it float over content */
+      top: 100%; /* Aligns dropdown just below the button */
+      left: 0;
+      z-index: 1; /* Ensures it appears above other elements */
+      /* background-color: #f1f1f1; */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%; /* Matches the button width */
+    }
+
+    .dropdown-item {
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-item:hover {
+      background-color: #ddd; /* Optional hover effect */
+    }
+
+    .custom-btn {
+        width: 119px;
+          background-color: #33373d00;
+          color: white;
+          padding: 7px 20px;
+          border: none;
+          border-radius: 8px;
+          font-size: 16px;
+      }
+      
+      .custom-btn:hover {
+          background-color: #444a52;
+          color: #fff;
+          transition: 0.2s ease-in-out;
+      }
+      
+      .custom-dropdown-menu {
+          background-color: #444a52;
+          border-radius: 8px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      .custom-dropdown-item {
+          /* color: white; */
+          padding: 10px 20px;
+      }
+      
+      .custom-dropdown-item:hover {
+          background-color: #555b63;
+          color: #fff;
+      }
+      .fbtn {
+        text-align: center;
+        background-color: #4a4a4b !important ;
+        /* width: -8px !important; */
+        padding: 12px 73px !important;
+    }
+
+
+    .equal{
+background-color: #4CC2FF !important;
+color: #272727;
+
+    }
+
+    .equal:hover{
+        background-color: #34a1d8  !important;
+    }
+
+    .divider {
+        position: relative;
+        z-index: 99;
+        background-color: #444347;
+        width: 96%;
+        height: 1px;
+        top: -38px;
+}
+ 
+
+input[type="text"] {
+    height: 90px;
+    width: 94% !important;
+}
+
+
+#history-container{
+    width: 303px;
+    height: 100vh;
+}
+
+#history-container h3 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+    display: flex;
+    /* justify-content: center; */
+    align-items: start;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+    
+}
+
+/* #history {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+    
+    color: #333;
+} */
+
+
+#myNewDiv{
+    margin-bottom: 20px;
+color: #fff;
+font-size: 19px;
+text-align: end;
+
+}
+
+
+
+button.dlthistory {
+    padding: 15px;
+    top: 579px;
+    position: absolute;
+}
+
+
+#numbs{
+background-color: #46414a;
+
+}
+
+#numbs:hover{
+
+    background-color: #444a52;
+}
