@@ -251,7 +251,7 @@ const clearHistory = () => {
 const factorial = (n) => {
     return n ? n * factorial(n - 1) : 1;
 }
-
+    
 document.getElementById('dropdownButton').addEventListener('click', function() {
     const dropdownMenu = document.getElementById('dropdownMenu');
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
@@ -263,3 +263,4 @@ window.addEventListener('click', function(e) {
     }
 });
 
+ 

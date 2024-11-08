@@ -53,6 +53,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 button:hover {
@@ -191,7 +192,7 @@ text-align: end;
 
 button.dlthistory {
     padding: 15px;
-    top: 579px;
+    top: 545px;
     position: absolute;
 }
 
@@ -204,4 +205,208 @@ background-color: #46414a;
 #numbs:hover{
 
     background-color: #444a52;
+}
+
+
+@media screen and (min-width: 914px) and (max-width:1024px) {
+
+    button{
+        padding: 15px 73px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        width: 188px;
+
+    
+}
+
+input[type="text"]{
+margin-bottom: 0px;
+}
+
+.dlthistory {
+    width: 17% !important; 
+    padding: 15px !important ;
+    top: 459px !important;
+
+}
+}
+
+
+
+@media screen and (min-width: 619px) and (max-width:768px) {
+
+    button{
+        padding: 15px 46px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        width: 165px;
+
+       
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 22px;   
+    top: 467px !important;
+}
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width:913px) {
+
+    button{
+        padding: 15px 59px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        width: 184px;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
+}
+
+
+@media screen and (min-width: 1025px) and (max-width:1326px) {
+
+    button{
+        padding: 15px 82px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        width: 184px;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width:320px) {
+
+
+    
+
+     
+    
+
+    button{
+        width: 18% !important;
+        padding: 12px 8px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        
+        display: none;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
+}
+
+
+
+
+@media screen and (min-width: 321px) and (max-width:375px) {
+
+
+    
+
+     
+    
+
+    button{
+        width: 18% !important;
+        padding: 12px 8px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        
+        display: none;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width:425px) {
+
+
+    
+
+     
+    
+
+    button{
+        width: 18% !important;
+        padding: 12px 8px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        
+        display: none;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
+}
+
+
+@media screen and (min-width: 426px) and (max-width:619px) {
+
+
+    
+
+     
+    
+
+    button{
+        width: 18% !important;
+        padding: 12px 8px !important;
+        text-align: center;
+    }
+
+    #history-container {
+        
+        display: none;
+}
+
+ .dlthistory {
+    padding: 11px 0px !important;
+    right: 10px;   
+    top: 467px  !important;
+}
+
 }
